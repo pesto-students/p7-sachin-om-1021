@@ -1,0 +1,136 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Lato' ,sans-serif;
+
+}
+
+/* Upper Half of the webpage */
+
+#upperDiv{
+  color: white;
+  background-color: #3C4048;
+  position: relative;
+  padding-bottom: 20px;
+
+}
+
+.img-div{
+  display: inline-block;
+  margin: 20px;
+  margin-left: 115px;
+}
+
+.album-cover-large
+{
+  height: 180px;
+  width: 180px;
+}
+
+.upper-text-div{
+  display: inline-block;
+  position: relative;;
+  bottom:100px;
+  margin-left:20px;
+}
+
+.icons-upperDiv{
+  display: inline-block;
+  position: relative;
+  bottom:6px;
+  right:375px;
+}
+
+.las{
+  margin: 5px;
+}
+
+/* middle part of the webpage */
+
+#middleDiv{
+  color: black;
+  margin: 15px 155px ;
+
+}
+
+table{
+  width: 119%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  position: relative;
+  right: 70px;
+}
+td {
+  padding: 10px  100px 30px  20px;
+}
+
+tr:nth-child(even)
+{
+    background-color: #EAEAEA;
+
+}
+
+
+/* lower part of the webpage */
+
+#lowerDiv
+{
+  background-color: #3E6D9C;
+  position: relative;
+  top:6.30rem;
+  z-index: 2;
+
+}
+
+#lowerDiv img{
+  margin: 10px 115px 10px 10px;
+  height: 100px;
+  width: 100px;
+}
+
+.text-lowerDiv
+{
+  display: inline-block;
+  color: white;
+  position:relative;
+  right: 6.5rem;
+  bottom:42px;
+}
+
+.icons-lowerDiv
+{
+  display: inline-block;
+  position: relative;
+  bottom:55px;
+  left:25.45rem;
+  color: white;
+}
+.icons-lowerDiv i
+{
+  padding-right: 126px;
+}
+
+td a{
+  border: 1px solid;
+  text-decoration: none;
+}
+
+/* sidebar */
+
+nav
+{
+
+  width: 50px;
+  height: 100%;
+  z-index: 1;
+  background-color: #EAEAEA;
+  position: fixed;
+
+}
+
+nav li
+{
+  margin-bottom: 56px;
+  text-align: center;
+}
