@@ -81,7 +81,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 hr {
@@ -101,10 +101,10 @@ hr {
   width: 400px;
   border-radius: 5%;
   box-shadow: 0 0 20px 10px aqua;
+  transition: 0.3s linear;
 }
 
 .image:hover {
-  transition: 0.3s linear;
   transition-property: all;
   transform: scale(1.1, 1.1);
   box-shadow: 0 0 20px 10px red;
@@ -121,12 +121,12 @@ hr {
 
 .small-btn {
   height: 30px;
-  margin: 8px 0;
+  margin: 30px;
   border-radius: 10px;
+  transition: 0.3s linear;
 }
 
 .small-btn:hover {
-  transition: 0.2s linear;
   transform: scale(1.1, 1.1);
 }
 
@@ -191,8 +191,7 @@ hr {
   border-radius: 10px;
 }
 
-button,
-.small-btn:hover {
+button:hover {
   cursor: pointer;
 }
 
@@ -319,7 +318,7 @@ button,
   color: red;
 }
 
-@media only screen and (max-width: 950px) {
+@media all and (max-width: 950px) {
   body {
     background-color: lightblue;
   }
