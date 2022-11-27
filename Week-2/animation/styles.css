@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#grandparent {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#parent {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.child-1,
+.child-2,
+.child-3,
+.child-4 {
+  height: 100px;
+  width: 100px;
+  transition: 1s linear;
+}
+
+.child-1 {
+  background-color: red;
+  transform-origin: top left;
+}
+.child-2 {
+  background-color: yellow;
+  transform-origin: top right;
+}
+.child-3 {
+  background-color: blue;
+  transform-origin: bottom left;
+}
+.child-4 {
+  background-color: green;
+  transform-origin: bottom right;
+}
+
+#parent:hover .child-1 {
+  transform: rotate(90deg);
+}
+
+#parent:hover .child-3 {
+  transform: rotate(-90deg);
+}
+
+#parent:hover .child-2 {
+  transform: rotate(-90deg);
+}
+#parent:hover .child-4 {
+  transform: rotate(90deg);
+}
+
+.text {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
+}
