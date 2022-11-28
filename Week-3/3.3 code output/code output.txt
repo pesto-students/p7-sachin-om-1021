@@ -1,20 +1,4 @@
-week-3 assignment 
-
-
-3.1 --> Ceated a memoize function from scratch and memoized the factorial function using it.
-
-
-3.2--> Larnt how to use .call(), .apply(), .bind() and used in different sceneraios to demonstrate their functionality
-
-
-3.3 --> Predicted the code output and wrote the explation below and as well as in a  text file 
-
-
-
-
-
 ----- code ----- 
-
 
 function createIncrement() {
   let count = 0;
@@ -38,18 +22,12 @@ increment();
 increment();
 log();
 
-
-
 ----- output -----
-
 
  count is 0
 
 
-
-
 ----- explanation ----- 
-
 
 In the output the value of count is zero becauese everytime the increment
 function is called it updates the balue of count but the value is not reassigned
