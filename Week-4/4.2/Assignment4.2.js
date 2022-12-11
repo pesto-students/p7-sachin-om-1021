@@ -1,16 +1,18 @@
-const person = function () {};
-console.log(new person());
+var Person = function () {};
 
-person.prototype.initialize = function (name, age) {
+Person.prototype.initialize = function (name, age) {
   this.name = name;
   this.age = age;
 };
-person.prototype.teach = function (subject) {
-  console.log(this.name + " teaches " + subject);
+
+var Teacher = function () {
+  this.teach = function (subject) {
+    console.log(this.name + " is now teaching " + subject);
+  };
 };
+Teacher.prototype = new Person();
+var him = new Teacher();
 
-const teacher = new person();
+him.initialize("Sachin", 24);
+him.teach("Javascript");
 
-teacher.initialize("Sachin", 23);
-
-teacher.teach("Javascript");
