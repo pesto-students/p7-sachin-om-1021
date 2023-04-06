@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur116.cur), auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 15px;
+}
+.header > h1 {
+  letter-spacing: 8px;
+}
+.header > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50vw;
+}
+.header > nav > a {
+  text-decoration: none;
+  color: black;
+}
+
+.header > button {
+  width: 65px;
+  height: 40px;
+  border-radius: 10px;
+  border-style: none;
+  color: white;
+  background-color: black;
+}
+.header > button:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 5px grey;
+}
+.circle {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.red:hover {
+  color: red;
+}
+.green:hover {
+  color: rgb(6, 242, 6);
+}
+.orange:hover {
+  color: orange;
+}
+.blue:hover {
+  color: turquoise;
+}
+.violet:hover {
+  color: violet;
+}
+.boost {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  margin: 30px;
+}
+.boost-heading > h1 {
+  margin-bottom: 20px;
+  font-size: 4rem;
+}
+.laptop-img > img {
+  height: 300px;
+  width: 300px;
+}
+.boost-heading > button {
+  margin-top: 20px;
+  width: 90px;
+  height: 40px;
+  border-style: none;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+}
+.boost-heading > button:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 5px grey;
+}
+.shortenerDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  height: 20vh;
+  margin: 50px 145px;
+  background-image: url("http://surl.li/ffqmh");
+  box-shadow: 0 0 20px 10px black;
+}
+.inputDiv {
+  display: flex;
+  height: 50px;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+.inputDiv > input {
+  cursor: text;
+  caret-color: black;
+  width: 60vw;
+  margin: 0 0px;
+}
+.inputDiv > button {
+  width: 90px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+::placeholder {
+  margin: 10px;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+.inputDiv > input:focus,
+.inputDiv > button:hover {
+  outline: none;
+  border-color: whitesmoke;
+  box-shadow: 0 0 15px 1px whitesmoke;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.urlList {
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+  width: 40vw;
+  margin: 15px 50px;
+  overflow-y: auto;
+}
+.urlList li {
+  margin: 10px;
+  font-weight: bolder;
+  font-weight: 20px;
+  letter-spacing: 5px;
+}
+.urlList a {
+  text-decoration: none;
+  color: black;
+}
